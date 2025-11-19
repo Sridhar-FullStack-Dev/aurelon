@@ -12,7 +12,7 @@ export default function HeroSection() {
           <div className="border-2 border-alt-black px-4 py-2 rounded-full font-bold text-sm">
             SOFT RITUAL
           </div>
-          <div className="bg-alt-black text-secondary border-2 border-alt-black px-4 py-2 rounded-full font-bold text-sm">
+          <div className="bg-alt-black text-alt-secondary border-2 border-alt-black px-4 py-2 rounded-full font-bold text-sm">
             AURELON
           </div>
           <div className="border-2 border-alt-black px-4 py-2 rounded-full font-bold text-sm">

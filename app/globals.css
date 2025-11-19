@@ -4,11 +4,11 @@
 @custom-variant dark (&:is(.dark *));
 
 @theme{
-  --color-primary: #102120;
-  --color-secondary: #e1ec60;
+  --color-alt-primary: #102120;
+  --color-alt-secondary: #e1ec60;
   --color-tertiary: #e6e5dc;
   --color-alt-black: #040402;
-  --color-primary-red: #ff4d4f;
+  --color-alt-red: #ff4d4f;
 }
 
 *{

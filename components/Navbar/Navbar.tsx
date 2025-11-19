@@ -28,10 +28,10 @@ export default function Navbar() {
   }, []);
   return (
     <nav
-      className={`h-25 font-bold bg-tertiary border-b flex justify-between items-center ${dm_sans.className}`}
+      className={`h-25 font-bold bg-tertiary border-b border-alt-black flex justify-between items-center ${dm_sans.className}`}
     >
       <div className="flex items-center gap-8 h-full">
-        <div className="px-8 h-full text-2xl border-r flex items-center justify-center">
+        <div className="px-8 h-full text-2xl border-r border-alt-black flex items-center justify-center">
           AURELON
         </div>
 
@@ -51,7 +51,7 @@ export default function Navbar() {
 
         <Link
           href="/"
-          className="group bg-alt-black border-x border-alt-black hover:bg-secondary hover:text-alt-black transition-colors duration-500 ease-in-out h-full text-white px-12 text-lg flex items-center justify-center font-bold"
+          className="group bg-alt-black border-x border-alt-black hover:bg-alt-secondary hover:text-alt-black transition-colors duration-500 ease-in-out h-full text-white px-12 text-lg flex items-center justify-center font-bold"
         >
           EXPLORE
           <GoArrowUpRight className="size-6 ml-2 transition-transform duration-300 ease-out group-hover:-translate-y-0.5" />
