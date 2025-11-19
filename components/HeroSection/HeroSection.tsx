@@ -1,9 +1,10 @@
-import { elmsSans } from "@/public/fonts/fonts";
+import { dm_sans } from "@/public/fonts/fonts";
+import Image from "next/image";
 import { CiDesktopMouse2 } from "react-icons/ci";
 
 export default function HeroSection() {
   return (
-    <section className={`bg-tertiary ${elmsSans.className}`}>
+    <section className={`bg-tertiary ${dm_sans.className}`}>
       <div className="pt-32 px-8">
         <h1 className="text-8xl font-bold uppercase">A QUIET FUTURE</h1>
 
@@ -19,9 +20,7 @@ export default function HeroSection() {
           </div>
         </div>
 
-        <h1 className="text-8xl font-bold uppercase mt-6">
-          OF SKIN RITUALS
-        </h1>
+        <h1 className="text-8xl font-bold uppercase mt-6">OF SKIN RITUALS</h1>
         <h1 className="text-8xl font-bold uppercase">BY AURELON</h1>
       </div>
 
@@ -37,9 +36,16 @@ export default function HeroSection() {
         </div>
       </div>
 
-      <div className="mt-8 flex justify-between items-center px-8 h-fit">
-        <div></div>
-        <div className="text-9xl font-bold">(A-01)</div>
+      <div className="mt-12 flex justify-between items-center p-8 h-fit">
+        <Image
+          src={"/wave.png"}
+          alt="wave"
+          width={512}
+          height={512}
+          className="w-72 h-auto object-contain opacity-30"
+        />
+
+        <div className="text-[6.5rem] font-bold">(A-01)</div>
       </div>
     </section>
   );

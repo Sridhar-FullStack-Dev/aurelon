@@ -6,3 +6,18 @@
   --color-tertiary: #e6e5dc;
   --color-alt-black: #040402;
 }
+
+*{
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+*::-webkit-scrollbar{
+  display: none;
+}
+
+::selection{
+  background-color: var(--color-secondary);
+  color: var(--color-alt-black);
+}
+
