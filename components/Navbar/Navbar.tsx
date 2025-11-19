@@ -42,17 +42,44 @@ export default function Navbar() {
 
       <div className="flex items-center gap-8 h-full">
         <div className="flex gap-8 text-lg">
-          <Link href="/">Rituals</Link>
-          <Link href="/">Skin Lab</Link>
-          <Link href="/">Light Studies</Link>
-          <Link href="/">Texture</Link>
-          <Link href="/">Archive</Link>
+          {navMenus.map(({ href, label }) => (
+            <Link key={href} href={href} className="hover:underline">
+              {label}
+            </Link>
+          ))}
         </div>
 
-        <div className="bg-alt-black h-full text-white px-12 text-lg flex items-center justify-center font-bold">
-          EXPLORE <GoArrowUpRight className="size-6 ml-2" />
-        </div>
+        <Link
+          href="/"
+          className="group bg-alt-black border-x border-alt-black hover:bg-secondary hover:text-alt-black transition-colors duration-500 ease-in-out h-full text-white px-12 text-lg flex items-center justify-center font-bold"
+        >
+          EXPLORE
+          <GoArrowUpRight className="size-6 ml-2 transition-transform duration-300 ease-out group-hover:-translate-y-0.5" />
+        </Link>
       </div>
     </nav>
   );
 }
+
+const navMenus = [
+  {
+    href: "/rituals",
+    label: "Rituals",
+  },
+  {
+    href: "/skin-lab",
+    label: "Skin Lab",
+  },
+  {
+    href: "/light-studies",
+    label: "Light Studies",
+  },
+  {
+    href: "/texture",
+    label: "Texture",
+  },
+  {
+    href: "/archive",
+    label: "Archive",
+  },
+];
