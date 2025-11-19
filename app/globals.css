@@ -21,7 +21,7 @@
 }
 
 ::selection{
-  background-color: var(--color-secondary);
+  background-color: var(--color-alt-secondary);
   color: var(--color-alt-black);
 }
 

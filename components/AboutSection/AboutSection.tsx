@@ -19,7 +19,7 @@ export default function AboutSection() {
       </Marquee>
 
       <div className="bg-alt-secondary px-8 py-24 relative">
-        <div className="flex justify-between items-center text-xl font-medium">
+        <div className="flex justify-between items-center text-xl font-semibold">
           <h4 className="w-96 text-left">
             Aurelón captures what the skin whispers before the eyes notice it
           </h4>
@@ -53,7 +53,7 @@ export default function AboutSection() {
           </div>
         </div>
 
-        <div className="mt-50 flex justify-center items-center w-full">
+        <div className="mt-50 flex flex-col justify-center items-center w-full">
           <Image
             src={"/wave.png"}
             alt="wave"
@@ -61,6 +61,13 @@ export default function AboutSection() {
             height={512}
             className="w-72 h-auto object-contain opacity-30"
           />
+
+          <div className="text-center text-3xl font-medium mt-4">
+            In a world shaped by movement and stillness, <br />
+            Aurelón studies the quiet space of skin. <br />
+            <p className="opacity-50">The subtle tension of texture, light, and warmth.</p>
+            <p className="opacity-30">designed to profondly humanize the world.</p>
+          </div>
         </div>
       </div>
     </section>
