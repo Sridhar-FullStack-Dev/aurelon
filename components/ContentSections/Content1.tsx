@@ -9,7 +9,7 @@ export default function Content1() {
         <h1>Soft Light </h1>
         <h1>/ Human Form</h1>
         <h1>2026</h1>
-        <h1>Aurelon /</h1>
+        <h1>AURELÓN /</h1>
       </div>
 
       <div className="my-8">
@@ -27,7 +27,7 @@ export default function Content1() {
         <h1>Soft Light </h1>
         <h1>/ Human Form</h1>
         <h1>2026</h1>
-        <h1>Aurelon /</h1>
+        <h1>AURELÓN /</h1>
       </div>
     </section>
   );
