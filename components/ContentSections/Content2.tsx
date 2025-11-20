@@ -70,6 +70,16 @@ export default function Content2() {
         </div>
         <div className="w-[25%] h-64 border-b border-gray-400"></div>
       </div>
+
+      <div className="mt-8 px-8">
+        <Image
+          src={"/wave.png"}
+          alt="wave"
+          width={512}
+          height={512}
+          className="w-72 h-auto object-contain opacity-30 invert"
+        />
+      </div>
     </section>
   );
 }
