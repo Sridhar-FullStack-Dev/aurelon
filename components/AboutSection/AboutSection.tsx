@@ -1,11 +1,31 @@
+"use client";
 import { dm_sans, playfair_display } from "@/public/fonts/fonts";
+import LocomotiveScroll, { ILocomotiveScrollOptions } from "locomotive-scroll";
+import Image from "next/image";
+import { useEffect, useRef } from "react";
 import { LiaAsteriskSolid } from "react-icons/lia";
 import { Marquee } from "../ui/marquee";
-import Image from "next/image";
 
 export default function AboutSection() {
+  const aboutLocoRef = useRef<HTMLHeadingElement>(null);
+
+  useEffect(() => {
+    const scroll = new LocomotiveScroll({
+      el: document.querySelector("[data-scroll-container]") as HTMLElement,
+      smooth: true,
+    } as ILocomotiveScrollOptions);
+
+    return () => {
+      if (scroll) scroll.destroy();
+    };
+  }, []);
+
   return (
-    <section className={`${playfair_display.className} `}>
+    <section
+      ref={aboutLocoRef}
+      data-scroll-container
+      className={`${playfair_display.className} `}
+    >
       <Marquee className="[--duration:30s] bg-alt-primary text-tertiary h-20">
         {marqueeText.map((text, index) => (
           <div
@@ -29,7 +49,11 @@ export default function AboutSection() {
           </h4>
         </div>
 
-        <div className="absolute -top-[28%] left-1/2 -translate-x-[49%] -translate-y-1/2 bg-white w-[50vw] h-240 p-8">
+        <div
+          data-scroll
+          data-scroll-speed="0.2"
+          className="absolute -top-20 left-1/2 -translate-x-[49%] -translate-y-1/2 bg-white w-[50vw] h-240 p-8"
+        >
           <Image
             src={
               "https://images.pexels.com/photos/31008103/pexels-photo-31008103.jpeg"
@@ -65,8 +89,12 @@ export default function AboutSection() {
           <div className="text-center text-3xl font-medium mt-4">
             In a world shaped by movement and stillness, <br />
             Aurelón studies the quiet space of skin. <br />
-            <p className="opacity-50">The subtle tension of texture, light, and warmth.</p>
-            <p className="opacity-30">designed to profondly humanize the world.</p>
+            <p className="opacity-50">
+              The subtle tension of texture, light, and warmth.
+            </p>
+            <p className="opacity-30">
+              designed to profondly humanize the world.
+            </p>
           </div>
         </div>
       </div>

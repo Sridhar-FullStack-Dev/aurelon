@@ -1,4 +1,5 @@
 import AboutSection from "@/components/AboutSection/AboutSection";
+import ContentSections from "@/components/ContentSections/ContentSections";
 import HeroSection from "@/components/HeroSection/HeroSection";
 
 export default function Home() {
@@ -6,6 +7,7 @@ export default function Home() {
     <main>
       <HeroSection />
       <AboutSection />
+      <ContentSections />
     </main>
   );
 }
